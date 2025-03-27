@@ -36,16 +36,6 @@ App.jsx 作為主要邏輯入口，分成 NewTodoForm（表單元件）、TodoLi
 
 ——————
 
-重點結構
-src
-├── App.jsx                # 主要邏輯：管理 todos 狀態、新增/切換/刪除功能，以及匯入其他元件
-├── NewTodoForm.jsx        # 表單元件，用於新增待辦
-├── TodoList.jsx           # 清單容器元件，負責顯示一列 TodoItem
-├── TodoItem.jsx           # 單筆待辦元件，含 checkbox 與刪除按鈕
-└── main.js                # React 應用程式入口
-
-——————
-
 1.App.jsx (核心邏輯)
 ・讀取/儲存 localStorage：
 ・透過 useEffect(() => { localStorage.setItem("ITEMS", ...) }, [todos]) 每次更新都同步資料。
