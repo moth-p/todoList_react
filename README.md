@@ -1,8 +1,8 @@
 React + Tailwind Todo List
 
-這是一個使用 React + Tailwind CSS 製作的 Todo List 小專案，透過 useState 與 useEffect 管理狀態、並將資料存入 localStorage。專案也示範如何將程式拆分成多個元件，透過 props 傳遞，讓程式架構更清晰易維護。
+這是一個使用 React + Tailwind CSS 製作的 Todo List 練習，透過 useState 與 useEffect 管理狀態、並將資料存入 localStorage。專案也將程式拆分成多個元件，透過 props 傳遞。
 
-———————
+——————
 
 功能特色
 
@@ -18,7 +18,7 @@ React + Tailwind Todo List
 4自動儲存
 每次新增、切換或刪除後，清單都會同步更新到 localStorage，即使重新整理頁面也能保留。
 
-———————
+——————
 
 練習重點
 
@@ -34,9 +34,9 @@ App.jsx 作為主要邏輯入口，分成 NewTodoForm（表單元件）、TodoLi
 4.Tailwind CSS
 使用 Utility Class 快速完成版面配置、按鈕外觀與字體樣式。
 
-———————
+——————
 
-程式結構
+重點結構
 src
 ├── App.jsx                # 主要邏輯：管理 todos 狀態、新增/切換/刪除功能，以及匯入其他元件
 ├── NewTodoForm.jsx        # 表單元件，用於新增待辦
@@ -44,7 +44,7 @@ src
 ├── TodoItem.jsx           # 單筆待辦元件，含 checkbox 與刪除按鈕
 └── main.js                # React 應用程式入口
 
-———————
+——————
 
 1.App.jsx (核心邏輯)
 ・讀取/儲存 localStorage：
